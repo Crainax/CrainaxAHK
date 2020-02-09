@@ -1,4 +1,4 @@
-
+﻿
 Numpad0 & Numpad1::
  MsgBox, 你大爷
 Return
