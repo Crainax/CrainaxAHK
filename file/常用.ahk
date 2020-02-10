@@ -2,7 +2,15 @@
 win+H:置顶窗口
 win+-:音量减小
 win+=:音量增加
+Ctrl+Win+C 复制文件路径
+Cap+B 百度搜索选中的
+Cap+Z 百度搜索选中的
+Cap+T 百度搜索选中的
+Cap+B 百度搜索选中的
+Cap+` 大小写
 */
+
+SetCapsLockState, AlwaysOff
 
 #h::
 	;将当前激活窗口存入变量w
@@ -17,12 +25,12 @@ win+=:音量增加
 	If (varTopMost & 0x8)
 	{
 		ToolTip, %varTitle% 已经置顶
-		SetTimer, RemoveToolTip, -2000
+		SetTimer, RemoveToolTip, -500
 	}
 	Else
 	{
 		ToolTip, %varTitle% 取消置顶
-		SetTimer, RemoveToolTip, -2000
+		SetTimer, RemoveToolTip, -500
 	}
 return
 
@@ -49,7 +57,58 @@ return
 ^!l::Send ^{Right}
 ^!k::Send ^{Up}
 ^!j::Send ^{Down}
++!h::Send +{Left}
++!l::Send +{Right}
++!k::Send +{Up}
++!j::Send +{Down}
 ^+!h::Send ^+{Left}
 ^+!l::Send ^+{Right}
 ^+!k::Send ^+{Up}
 ^+!j::Send ^+{Down}
+
+;Ctrl+Win+C 复制文件路径
+^#c::
+; null= 
+send ^c
+sleep,200
+clipboard=%clipboard% ;%null%
+tooltip,%clipboard%
+sleep,500
+tooltip,
+return
+
+;切大小写
+CapsLock & `::                                                       ;|
+GetKeyState, CapsLockState, CapsLock, T                              ;|
+if CapsLockState = D                                                 ;|
+    SetCapsLockState, AlwaysOff                                      ;|
+else                                                                 ;|
+    SetCapsLockState, AlwaysOn                                       ;|
+KeyWait, ``                                                          ;|
+return
+
+;百度搜索
+CapsLock & b:: 
+Send ^c 
+Run https://www.baidu.com/s?ie=UTF-8&wd=%clipboard% 
+return 
+
+;知乎搜索
+CapsLock & z:: 
+Send ^c 
+Run https://www.zhihu.com/search?type=content&q=%clipboard%
+return 
+
+;淘宝搜索
+CapsLock & t:: 
+Send ^c 
+Run https://s.taobao.com/search?q=%clipboard%
+return 
+
+;谷歌搜索
+CapsLock & g:: 
+Send ^c 
+Run http://www.google.com/search?q=%clipboard% 
+return
+
+;

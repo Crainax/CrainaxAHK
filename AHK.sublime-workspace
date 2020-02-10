@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"if",
+				"If"
+			],
+			[
+				"winwait",
+				"WinWaitActive"
+			],
+			[
 				"绿",
 				"绿1\t绿色"
 			],
@@ -404,10 +412,6 @@
 				"DzGetTriggerUIEventFrame"
 			],
 			[
-				"if",
-				"if\tIf Block"
-			],
-			[
 				"UIIte",
 				"UIItemDetail"
 			],
@@ -510,17 +514,40 @@
 			[
 				"dzgettriplay",
 				"DzGetTriggerUIEventPlayer"
-			],
-			[
-				"gettriggerpla",
-				"DzGetTriggerSyncPlayer"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "file/1.ahk",
+			"settings":
+			{
+				"buffer_size": 560,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "file/常用.ahk",
+			"settings":
+			{
+				"buffer_size": 1888,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "ssdfsdfsdfsdsdf\n\nssdfsdfsdfsdsdfssdfsdfsdfsdsdfssdfsdfsdfsdsdf\nssdfsdfsdfsdsdf\nssdfsdfsdfsdsdf\n你大爷\n\n中键左右",
+			"settings":
+			{
+				"buffer_size": 104,
+				"line_ending": "Windows",
+				"name": "ssdfsdfsdfsdsdf"
+			}
+		}
 	],
-	"build_system": "",
+	"build_system": "Packages/SublimeAutoHotkey-master/AutoHotkey.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -538,6 +565,26 @@
 				"Packages/Lua/Lua.sublime-build",
 				""
 			]
+		],
+		[
+			[
+				[
+					"Packages/SublimeAutoHotkey-master/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeAutoHotkey-master/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/SublimeAutoHotkey-master/AutoHotkey.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/SublimeAutoHotkey-master/AutoHotkey.sublime-build",
+				""
+			]
 		]
 	],
 	"build_varint": "",
@@ -547,6 +594,38 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"gitcom",
+				"Git: Commit"
+			],
+			[
+				"gitadd",
+				"Git: Add All"
+			],
+			[
+				"gitad",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"auto",
+				"Set Syntax: AutoHotkey"
+			],
+			[
+				"jass",
+				"Set Syntax: JASS (Warcraft 3)"
+			],
+			[
+				"gitpush",
+				"Git: Push"
+			],
+			[
+				"gita",
+				"Git: Add All"
+			],
+			[
+				"gitini",
+				"Git: Init"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -558,22 +637,6 @@
 			[
 				"instal",
 				"Package Control: Install Package"
-			],
-			[
-				"gitpush",
-				"Git: Push"
-			],
-			[
-				"gitcom",
-				"Git: Commit"
-			],
-			[
-				"gitad",
-				"Git: Add All"
-			],
-			[
-				"gita",
-				"Git: Add All"
 			],
 			[
 				"rename",
@@ -592,10 +655,6 @@
 				"Git: Pull"
 			],
 			[
-				"jass",
-				"Set Syntax: JASS (Warcraft 3)"
-			],
-			[
 				"rena",
 				"Rename File"
 			],
@@ -606,10 +665,6 @@
 			[
 				"git",
 				"Git: Commit"
-			],
-			[
-				"gitadd",
-				"Git: Add All"
 			],
 			[
 				"gitocm",
@@ -810,8 +865,14 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/D/War3/AHK"
+	],
 	"file_history":
 	[
+		"/D/War3/AHK/file/2048.ahk",
+		"/D/War3/AHK/file/常用.ahk",
 		"/C/Users/Crainax/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
 		"/D/4_we_WorldEdit v1.2.2.1/WorldEdit v1.2.2/plugin/warcraft3/dzclient_api.ini",
 		"/D/4_we_WorldEdit v1.2.2.1/-- 第一次使用需要手动安装插件 --/把这两个文件，放到到魔兽根目录.txt",
@@ -937,13 +998,11 @@
 		"/D/War3/Maps/CRango/TestUI/hero/banzang.mdl",
 		"/D/War3/Maps/CRango/edit/SingleTest2.j",
 		"/D/War3/Maps/CRango/edit/SingleTest.j",
-		"/D/War3/Maps/CRango/edit/AlbumUI.j",
-		"/D/War3/Maps/TestModel/test.j",
-		"/D/War3/Maps/CRango/edit/ItemString.j"
+		"/D/War3/Maps/CRango/edit/AlbumUI.j"
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 42.0
 	},
 	"find_in_files":
 	{
@@ -957,6 +1016,47 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"中键左右",
+			"firefox",
+			"中键左右",
+			"ahk_exe firefox.exe",
+			"firefox.exe",
+			"MozillaWindowClass",
+			"WinExist",
+			"firefox",
+			"return",
+			"ssd",
+			"中键左右",
+			"你大爷",
+			"ssdfsdfsdfsdsdf",
+			"google",
+			"2000",
+			"ssdfsdfsdfsdsdf",
+			"ssdfsdfsdfsdsdfssdfsdfsdfsdsdfssdfsdfsdfsdsdf",
+			"ssdfsdfsdfsdsdf",
+			"Send",
+			"SendInput",
+			"Up",
+			"Right",
+			"Left",
+			"return",
+			"Send",
+			"Left",
+			"End",
+			"Home",
+			"Send",
+			"Media_Play_Pause",
+			"Media_Prev",
+			"Media_Next",
+			"WaveVolume",
+			"SoundSetWaveVolume",
+			"SoundSet",
+			"expression",
+			"w",
+			"ExStyle",
+			"SendInput",
+			"Send",
+			"em"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -974,8 +1074,101 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "file/1.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 560,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								41,
+								41
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeAutoHotkey-master/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "file/常用.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1888,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1538,
+								1538
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeAutoHotkey-master/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1848.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								104
+							]
+						],
+						"settings":
+						{
+							"auto_name": "ssdfsdfsdfsdsdf",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -996,11 +1189,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1012,7 +1212,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 206.0
+		"height": 180.0
 	},
 	"output.find_results":
 	{
@@ -1035,6 +1235,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"常用",
+				"file\\常用.ahk"
+			],
 			[
 				"spellim",
 				"edit\\SpellImplement.j"
@@ -1542,10 +1746,6 @@
 			[
 				"bignumber",
 				"edit\\BigNumber.j"
-			],
-			[
-				"dashsy",
-				"edit\\DashSystem.j"
 			]
 		],
 		"width": 0.0
