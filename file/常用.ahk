@@ -8,6 +8,10 @@ Cap+Z 百度搜索选中的
 Cap+T 百度搜索选中的
 Cap+B 百度搜索选中的
 Cap+` 大小写
+Cap+1 翻译词
+Cap+2 翻译句
+鼠标中键+鼠标侧上键:虚拟桌面←
+鼠标中键+鼠标侧右键:虚拟桌面→
 */
 
 SetCapsLockState, AlwaysOff
@@ -25,11 +29,13 @@ SetCapsLockState, AlwaysOff
 	If (varTopMost & 0x8)
 	{
 		ToolTip, %varTitle% 已经置顶
+		#Persistent
 		SetTimer, RemoveToolTip, -500
 	}
 	Else
 	{
 		ToolTip, %varTitle% 取消置顶
+		#Persistent
 		SetTimer, RemoveToolTip, -500
 	}
 return
@@ -111,4 +117,25 @@ Send ^c
 Run http://www.google.com/search?q=%clipboard% 
 return
 
-;
+;翻译词
+CapsLock & 1:: 
+Send ^c 
+Run http://dict.cn/%clipboard%
+return
+
+;翻译句
+CapsLock & 2:: 
+Send ^c 
+Run https://translate.google.cn/#view=home&op=translate&sl=auto&tl=zh-CN&text=%clipboard%
+return
+
+MButton & XButton1::
+Send ^#{Right}
+Return
+
+MButton & XButton2::
+Send ^#{Left}
+Return
+
+
+F2::SoundBeep 500,10000
