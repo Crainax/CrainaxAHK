@@ -1,5 +1,7 @@
 ﻿/*
-win+H:置顶窗口
+win+T:置顶窗口
+win+h:最小化窗口
+win+u:显示刚刚最小化的窗口
 win+-:音量减小
 win+=:音量增加
 Ctrl+Win+C 复制文件路径
@@ -14,9 +16,11 @@ Cap+2 翻译句
 鼠标中键+鼠标侧右键:虚拟桌面→
 */
 
+#Include, D:\War3\AHK\file\MinimizeToTrayMenu.ahk
+
 SetCapsLockState, AlwaysOff
 
-#h::
+#t::
 	;将当前激活窗口存入变量w
 	WinGetActiveTitle, w
 	;对w窗口置顶，Toggle表示在on 与 off 中切换
