@@ -133,13 +133,22 @@ Send ^c
 Run https://translate.google.cn/#view=home&op=translate&sl=auto&tl=zh-CN&text=%clipboard%
 return
 
+;切换虚拟桌面	→
 MButton & XButton1::
 Send ^#{Right}
 Return
 
+;切换虚拟桌面	→
+^#!l::
+Send ^#{Right}
+Return
+
+^#!h::
+Send ^#{Left}
+Return
+
+;切换虚拟桌面←
 MButton & XButton2::
 Send ^#{Left}
 Return
 
-
-F2::SoundBeep 500,10000
