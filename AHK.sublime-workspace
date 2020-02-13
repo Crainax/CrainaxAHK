@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Cap",
+				"CapsLock"
+			],
+			[
 				"if",
 				"If"
 			],
@@ -510,15 +514,20 @@
 			[
 				"dzplayer",
 				"DzGetTriggerSyncPlayer"
-			],
-			[
-				"dzgettriplay",
-				"DzGetTriggerUIEventPlayer"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "file/常用.ahk",
+			"settings":
+			{
+				"buffer_size": 2703,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/SublimeAutoHotkey-master/AutoHotkey.sublime-build",
 	"build_system_choices":
@@ -580,6 +589,18 @@
 				"Git: Add All"
 			],
 			[
+				"gitpul",
+				"Git: Pull"
+			],
+			[
+				"gia",
+				"Git: Add All"
+			],
+			[
+				"gitpad",
+				"Git: Update Project Ignored Files"
+			],
+			[
 				"gitco",
 				"Git: Commit"
 			],
@@ -626,10 +647,6 @@
 			[
 				"Gitpush",
 				"Git: Push"
-			],
-			[
-				"gitpul",
-				"Git: Pull"
 			],
 			[
 				"gitpull",
@@ -848,8 +865,9 @@
 	],
 	"file_history":
 	[
-		"/D/WorldEdit v1.2/-- 第一次使用需要手动安装插件 --/安装方法.txt",
 		"/D/War3/AHK/file/翻译.ahk",
+		"/C/Users/Crainax/Downloads/MinimizeToTrayMenu.ahk",
+		"/D/WorldEdit v1.2/-- 第一次使用需要手动安装插件 --/安装方法.txt",
 		"/D/War3/AHK/file/1.ahk",
 		"/D/War3/AHK/file/常用.ahk",
 		"/D/War3/AHK/file/T1.ahk",
@@ -974,8 +992,7 @@
 		"/D/War3/Maps/CRango/edit/ShopUI.j",
 		"/D/War3/Maps/CRango/edit/HeroSpell.j",
 		"/D/War3/Maps/CRango/edit/output.j",
-		"/D/War3/Maps/CRango/api/YDJ/YDWEHeroLearnSkillAI.j.dump",
-		"/D/War3/Maps/CRango/api/YDJ/system/ht/blizzard.j"
+		"/D/War3/Maps/CRango/api/YDJ/YDWEHeroLearnSkillAI.j.dump"
 	],
 	"find":
 	{
@@ -993,6 +1010,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Return",
+			"Right",
 			"CurrentFileName",
 			"Right",
 			"ssdfsdfsdfsdsdf",
@@ -1068,8 +1087,47 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "file/常用.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2703,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								2343,
+								2343
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeAutoHotkey-master/AutoHotkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2669.33333333,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		},
 		{

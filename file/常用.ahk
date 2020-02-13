@@ -14,11 +14,11 @@ Cap+1 翻译词
 Cap+2 翻译句
 鼠标中键+鼠标侧上键:虚拟桌面←
 鼠标中键+鼠标侧右键:虚拟桌面→
+Cap+Enter:鼠标点击H
 */
-
-#Include, D:\War3\AHK\file\MinimizeToTrayMenu.ahk
-
 SetCapsLockState, AlwaysOff
+
+#Include D:\War3\AHK\file\MinimizeToTrayMenu.ahk
 
 #t::
 	;将当前激活窗口存入变量w
@@ -59,6 +59,8 @@ return
 ;方向映射
 !a::Send {Home}
 !i::Send {End}
++!a::Send +{Home}
++!i::Send +{End}
 !h::Send {Left}
 !l::Send {Right}
 !k::Send {Up}
@@ -100,38 +102,49 @@ return
 ;百度搜索
 CapsLock & b:: 
 Send ^c 
+Sleep, 10
 Run https://www.baidu.com/s?ie=UTF-8&wd=%clipboard% 
 return 
 
 ;知乎搜索
 CapsLock & z:: 
 Send ^c 
+Sleep, 10
 Run https://www.zhihu.com/search?type=content&q=%clipboard%
 return 
 
 ;淘宝搜索
 CapsLock & t:: 
 Send ^c 
+Sleep, 10
 Run https://s.taobao.com/search?q=%clipboard%
 return 
 
 ;谷歌搜索
 CapsLock & g:: 
 Send ^c 
+Sleep, 10
 Run http://www.google.com/search?q=%clipboard% 
 return
 
 ;翻译词
 CapsLock & 1:: 
 Send ^c 
+Sleep, 10
 Run http://dict.cn/%clipboard%
 return
 
 ;翻译句
 CapsLock & 2:: 
 Send ^c 
+Sleep, 10
 Run https://translate.google.cn/#view=home&op=translate&sl=auto&tl=zh-CN&text=%clipboard%
 return
+
+;Cap+Enter
+CapsLock & Enter::
+Send {Click}
+Return
 
 ;切换虚拟桌面	→
 MButton & XButton1::
