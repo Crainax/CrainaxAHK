@@ -147,9 +147,11 @@ Send {Click}
 Return
 
 ;切换虚拟桌面	→
+/*
 MButton & XButton1::
 Send ^#{Right}
 Return
+*/
 
 ;切换虚拟桌面	→
 ^#!l::
@@ -161,7 +163,8 @@ Send ^#{Left}
 Return
 
 ;切换虚拟桌面←
+/*
 MButton & XButton2::
 Send ^#{Left}
 Return
-
+*/
