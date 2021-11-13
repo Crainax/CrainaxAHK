@@ -12,8 +12,16 @@ Cap+B 百度搜索选中的
 Cap+` 大小写
 Cap+1 翻译词
 Cap+2 翻译句
-鼠标中键+鼠标侧上键:虚拟桌面←
-鼠标中键+鼠标侧右键:虚拟桌面→
+Cap+N 快速生成1-50的数字
+Cap+C 快速生成abcdefg的字母
+Cap+M 快速生成01-50的数字
+
+Cap+A:左屏幕
+Cap+D:左屏幕
+Cap+W:新建屏幕
+Cap+S:关闭屏幕
+
+
 Cap+Enter:鼠标点击H
 */
 SetCapsLockState, AlwaysOff
@@ -80,7 +88,7 @@ return
 
 ;Ctrl+Win+C 复制文件路径
 ^#c::
-; null= 
+; null=
 send ^c
 sleep,200
 clipboard=%clipboard% ;%null%
@@ -88,6 +96,22 @@ tooltip,%clipboard%
 sleep,500
 tooltip,
 return
+
+;左手切屏幕
+CapsLock & a::Send ^#{Left}
+CapsLock & s::Send ^#{Down}
+CapsLock & d::Send ^#{Right}
+CapsLock & w::Send ^#{Up}
+CapsLock & q::Send ^#d
+CapsLock & e::Send ^#{F4}
+
+;左手切标签
+CapsLock & z::Send ^{PgUp}
+CapsLock & x::Send ^{PgDn}
+
+; 左手切屏幕
+CapsLock & r::Send +#{Left}
+
 
 ;切大小写
 CapsLock & `::                                                       ;|
@@ -99,47 +123,58 @@ else                                                                 ;|
 KeyWait, ``                                                          ;|
 return
 
-;百度搜索
-CapsLock & b:: 
-Send ^c 
-Sleep, 10
-Run https://www.baidu.com/s?ie=UTF-8&wd=%clipboard% 
-return 
-
 ;知乎搜索
-CapsLock & z:: 
-Send ^c 
+/*
+CapsLock & z::
+Send ^c
 Sleep, 10
 Run https://www.zhihu.com/search?type=content&q=%clipboard%
-return 
+return
+*/
 
 ;淘宝搜索
-CapsLock & t:: 
-Send ^c 
+CapsLock & t::
+Send ^c
 Sleep, 10
 Run https://s.taobao.com/search?q=%clipboard%
-return 
+return
 
 ;谷歌搜索
-CapsLock & g:: 
-Send ^c 
+CapsLock & g::
+Send ^c
 Sleep, 10
-Run http://www.google.com/search?q=%clipboard% 
+Run http://www.google.com/search?q=%clipboard%
 return
 
 ;翻译词
-CapsLock & 1:: 
-Send ^c 
+CapsLock & 1::
+Send ^c
 Sleep, 10
 Run http://dict.cn/%clipboard%
 return
 
 ;翻译句
-CapsLock & 2:: 
-Send ^c 
+CapsLock & 2::
+Send ^c
 Sleep, 10
 Run https://translate.google.cn/#view=home&op=translate&sl=auto&tl=zh-CN&text=%clipboard%
 return
+
+;翻译句
+CapsLock & N::
+SendInput 1`n2`n3`n4`n5`n6`n7`n8`n9`n10`n11`n12`n13`n14`n15`n16`n17`n18`n19`n20`n21`n22`n23`n24`n25`n26`n27`n28`n29`n30`n31`n32`n33`n34`n35`n36`n37`n38`n39`n40`n41`n42`n43`n44`n45`n46`n47`n48`n49`n50`na`nb`nc`nd`ne`nf`ng`nh`ni`nj`nk`nl`nm`nn`no`np`nq`nr`ns`nt`nu`nv`nw`nx`ny`nz`n
+Return
+
+;翻译句
+CapsLock & M::
+SendInput 01`n02`n03`n04`n05`n06`n07`n08`n09`n10`n11`n12`n13`n14`n15`n16`n17`n18`n19`n20`n21`n22`n23`n24`n25`n26`n27`n28`n29`n30`n31`n32`n33`n34`n35`n36`n37`n38`n39`n40`n41`n42`n43`n44`n45`n46`n47`n48`n49`n50`n
+Return
+
+;翻译句
+/*CapsLock & ,::
+SendInput
+Return*/
+
 
 ;Cap+Enter
 CapsLock & Enter::
@@ -154,13 +189,17 @@ Return
 */
 
 ;切换虚拟桌面	→
+/*
 ^#!l::
 Send ^#{Right}
 Return
+*/
 
+/*
 ^#!h::
 Send ^#{Left}
 Return
+*/
 
 ;切换虚拟桌面←
 /*
